@@ -5,7 +5,7 @@ A cool ruby server that handle simple requests involving timeouts.
 ### Compatible requests
 The following request are hanlded:
 
-1. Set a new timeout
+##### Set a new timeout
 
 localhost:2016/api/response?connId=myConnId&timeout=myTimeout
 e.g
@@ -14,7 +14,7 @@ e.g
 curl -v localhost:2016/api/response?connId=1\&timeout=70
 ```
 
-2. Get server status
+##### Get server status
 
 localhost:2016/api/serverStatus
 e.g.
@@ -24,7 +24,7 @@ curl -v localhost:2016/api/serverStatus
 ```
 
 
-3. Kill a timeout
+##### Kill a timeout
 
 PUT localhost:2016/api/kill with data {"connID" : idToKill}
 e.g.
@@ -32,3 +32,20 @@ e.g.
 ```bash
 curl -v -X PUT localhost:2016/api/kill -d '{"connId" : 1}'
 ```
+
+
+
+## How To Run
+
+Change into to the directory containig the server
+
+###### Run the server
+```bash
+ruby server.rb
+```
+###### Send Requests from another terminal
+```bash
+curl -v localhost:2016/api/response?connId=1\&timeout=70
+```
+
+or any of the other requests
