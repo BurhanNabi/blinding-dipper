@@ -2,8 +2,9 @@
 
 A cool ruby server that handle simple requests involving timeouts.
 
-# Compatible requests
+### Compatible requests
 The following request are hanlded:
+
 1. Set a new timeout
 
 	localhost:2016/api/response?connId=myConnId&timeout=myTimeout
