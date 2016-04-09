@@ -3,7 +3,7 @@
 A cool ruby server that handle simple requests involving timeouts.
 
 ### Compatible requests
-The following request are hanlded:
+The following request are handled:
 
 ##### Set a new timeout
 
@@ -33,6 +33,7 @@ e.g.
 curl -v -X PUT localhost:2016/api/kill -d '{"connId" : 1}'
 ```
 
+###### Note to stop seeing the verbose output in the curl commands , remove the ```-v``` flag from the curls
 
 
 ## How To Run
